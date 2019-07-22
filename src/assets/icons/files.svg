@@ -1,0 +1,30 @@
+<svg id="ico" xmlns="http://www.w3.org/2000/svg" width="51" height="60" viewBox="0 0 51 60">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+
+      .cls-1, .cls-2 {
+        stroke: #f75f30;
+        stroke-width: 2px;
+        fill-rule: evenodd;
+      }
+
+      .cls-2 {
+        fill: none;
+      }
+    </style>
+  </defs>
+  <path id="Kształt_28" data-name="Kształt 28" class="cls-1" d="M515,1331h7v-45H483v7" transform="translate(-472 -1285)"/>
+  <path id="Kształt_31" data-name="Kształt 31" class="cls-2" d="M481,1298h5" transform="translate(-472 -1285)"/>
+  <path id="Kształt_31_kopia" data-name="Kształt 31 kopia" class="cls-2" d="M497,1298h12" transform="translate(-472 -1285)"/>
+  <path id="Kształt_31_kopia_2" data-name="Kształt 31 kopia 2" class="cls-2" d="M491,1303h18" transform="translate(-472 -1285)"/>
+  <path id="Kształt_31_kopia_3" data-name="Kształt 31 kopia 3" class="cls-2" d="M481,1312h28" transform="translate(-472 -1285)"/>
+  <path id="Kształt_31_kopia_4" data-name="Kształt 31 kopia 4" class="cls-2" d="M481,1316h28" transform="translate(-472 -1285)"/>
+  <path id="Kształt_31_kopia_5" data-name="Kształt 31 kopia 5" class="cls-2" d="M500,1320h9" transform="translate(-472 -1285)"/>
+  <path id="Kształt_31_kopia_6" data-name="Kształt 31 kopia 6" class="cls-2" d="M500,1324h9" transform="translate(-472 -1285)"/>
+  <path id="Kształt_31_kopia_7" data-name="Kształt 31 kopia 7" class="cls-2" d="M493,1334h9" transform="translate(-472 -1285)"/>
+  <path id="Kształt_29" data-name="Kształt 29" class="cls-2" d="M473,1292h43v42l-10,10H473v-52Z" transform="translate(-472 -1285)"/>
+  <path id="Kształt_30" data-name="Kształt 30" class="cls-2" d="M516,1334H506v9" transform="translate(-472 -1285)"/>
+</svg>

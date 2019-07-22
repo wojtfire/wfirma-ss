@@ -1,0 +1,39 @@
+<svg id="ico" xmlns="http://www.w3.org/2000/svg" width="67" height="60" viewBox="0 0 67 60">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: none;
+        stroke: #375ebc;
+        stroke-width: 2px;
+      }
+
+      .cls-1 {
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="Kształt_40" data-name="Kształt 40" class="cls-1" d="M1279,1306v-20h40v58h-52v-38h12Z" transform="translate(-1266 -1285)"/>
+  <rect id="Prostokąt_41" data-name="Prostokąt 41" class="cls-2" x="58" y="21" width="8" height="33"/>
+  <rect id="Prostokąt_41_kopia" data-name="Prostokąt 41 kopia" class="cls-2" x="58" y="16" width="8" height="7"/>
+  <path id="Kształt_44" data-name="Kształt 44" class="cls-1" d="M1324,1339l4,7,4-7" transform="translate(-1266 -1285)"/>
+  <path id="Kształt_41" data-name="Kształt 41" class="cls-1" d="M1283,1291h14" transform="translate(-1266 -1285)"/>
+  <path id="Kształt_41_kopia" data-name="Kształt 41 kopia" class="cls-1" d="M1283,1295h7" transform="translate(-1266 -1285)"/>
+  <rect id="Prostokąt_39" data-name="Prostokąt 39" class="cls-2" x="42" y="14" width="7" height="23"/>
+  <rect id="Prostokąt_39_kopia" data-name="Prostokąt 39 kopia" class="cls-2" x="33" y="22" width="7" height="15"/>
+  <path id="Kształt_42" data-name="Kształt 42" class="cls-1" d="M1280,1306h15v38" transform="translate(-1266 -1285)"/>
+  <path id="Kształt_43" data-name="Kształt 43" class="cls-1" d="M1315,1326h-20" transform="translate(-1266 -1285)"/>
+  <path id="Kształt_43_kopia" data-name="Kształt 43 kopia" class="cls-1" d="M1315,1330h-20" transform="translate(-1266 -1285)"/>
+  <path id="Kształt_43_kopia_2" data-name="Kształt 43 kopia 2" class="cls-1" d="M1305,1334h-10" transform="translate(-1266 -1285)"/>
+  <path id="Kształt_43_kopia_3" data-name="Kształt 43 kopia 3" class="cls-1" d="M1310,1334h-3" transform="translate(-1266 -1285)"/>
+  <path id="Kształt_43_kopia_4" data-name="Kształt 43 kopia 4" class="cls-1" d="M1315,1334h-3" transform="translate(-1266 -1285)"/>
+  <path id="Prostokąt_40" data-name="Prostokąt 40" class="cls-1" d="M1271.16,1310h19.68v6h-19.68v-6Z" transform="translate(-1266 -1285)"/>
+  <path id="Prostokąt_40_kopia" data-name="Prostokąt 40 kopia" class="cls-1" d="M1271.25,1319.75h4v4h-4v-4Z" transform="translate(-1266 -1285)"/>
+  <path id="Prostokąt_40_kopia_2" data-name="Prostokąt 40 kopia 2" class="cls-1" d="M1279.25,1319.75h4v4h-4v-4Z" transform="translate(-1266 -1285)"/>
+  <path id="Prostokąt_40_kopia_3" data-name="Prostokąt 40 kopia 3" class="cls-1" d="M1287.25,1319.75h4v4h-4v-4Z" transform="translate(-1266 -1285)"/>
+  <path id="Prostokąt_40_kopia_4" data-name="Prostokąt 40 kopia 4" class="cls-1" d="M1271.25,1327.75h4v4h-4v-4Z" transform="translate(-1266 -1285)"/>
+  <path id="Prostokąt_40_kopia_4-2" data-name="Prostokąt 40 kopia 4" class="cls-1" d="M1279.25,1327.75h4v4h-4v-4Z" transform="translate(-1266 -1285)"/>
+  <path id="Prostokąt_40_kopia_4-3" data-name="Prostokąt 40 kopia 4" class="cls-1" d="M1287.25,1327.75h4v4h-4v-4Z" transform="translate(-1266 -1285)"/>
+  <path id="Prostokąt_40_kopia_5" data-name="Prostokąt 40 kopia 5" class="cls-1" d="M1271.25,1335.75h4v4h-4v-4Z" transform="translate(-1266 -1285)"/>
+  <path id="Prostokąt_40_kopia_5-2" data-name="Prostokąt 40 kopia 5" class="cls-1" d="M1279.25,1335.75h4v4h-4v-4Z" transform="translate(-1266 -1285)"/>
+  <path id="Prostokąt_40_kopia_5-3" data-name="Prostokąt 40 kopia 5" class="cls-1" d="M1287.25,1335.75h4v4h-4v-4Z" transform="translate(-1266 -1285)"/>
+</svg>

@@ -1,0 +1,24 @@
+<svg id="ico" xmlns="http://www.w3.org/2000/svg" width="61" height="60" viewBox="0 0 61 60">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: none;
+        stroke: #00b75f;
+        stroke-width: 2px;
+      }
+
+      .cls-1 {
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="Kształt_32" data-name="Kształt 32" class="cls-1" d="M889,1289H878l-7,29v26h59v-26l-7-29H912" transform="translate(-870 -1285)"/>
+  <path id="Kształt_33" data-name="Kształt 33" class="cls-1" d="M885,1305v-12h4v-7h23v7h4v7" transform="translate(-870 -1285)"/>
+  <path id="Kształt_37" data-name="Kształt 37" class="cls-1" d="M888,1313h21" transform="translate(-870 -1285)"/>
+  <path id="Kształt_38" data-name="Kształt 38" class="cls-1" d="M914,1315h-2" transform="translate(-870 -1285)"/>
+  <path id="Kształt_39" data-name="Kształt 39" class="cls-1" d="M871,1317h58" transform="translate(-870 -1285)"/>
+  <circle id="Elipsa_19" data-name="Elipsa 19" class="cls-2" cx="30.5" cy="46.5" r="5.5"/>
+  <path id="Kształt_34" data-name="Kształt 34" class="cls-1" d="M891,1300h28v18H882v-9Z" transform="translate(-870 -1285)"/>
+  <path id="Kształt_35" data-name="Kształt 35" class="cls-1" d="M882,1309h9v-9" transform="translate(-870 -1285)"/>
+  <path id="Kształt_36" data-name="Kształt 36" class="cls-1" d="M889,1293h23" transform="translate(-870 -1285)"/>
+</svg>

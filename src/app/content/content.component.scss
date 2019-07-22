@@ -1,0 +1,84 @@
+@import '../../variables.scss';
+
+.container {
+  height: 100%;
+
+  .hero {
+    height: 100vh;
+    padding: 70px 0;
+    background: url(/assets/welcome-bg.jpg) no-repeat center top;
+    background-size: cover;
+    color: #fff;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    align-content: center;
+    height: 100vh;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    width: calc(100vw - (100vw - 100%));
+
+    .hero-header {
+      display: flex;
+      flex-direction: column;
+      align-self: center;
+      margin: 0 auto;
+      padding: 0 15px;
+
+      h1 {
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 40px;
+        margin: 20px 0 10px;
+      }
+
+      .small {
+        font-size: 18px;
+        margin-bottom: 30px;
+      }
+
+      .hero-btn {
+        display: block;
+        font-size: 16px;
+        padding: 20px 80px 20px 20px;
+        position: relative;
+        transition: all 0.2s ease-out;
+        background-color: $main-theme;
+        width: 259px;
+        align-self: center;
+        cursor: pointer;
+
+        &:hover {
+          background-color: $main-theme-dark;
+
+          &::after {
+            background-position-x: 60%;
+          }
+        }
+
+        &:after {
+          background: url(/assets/arrow-right-blue.svg) no-repeat center #fff;
+          bottom: 0;
+          content: '';
+          display: block;
+          position: absolute;
+          right: 0;
+          top: 0;
+          transition: all 0.2s ease-out;
+          width: 60px;
+        }
+      }
+    }
+
+    .triangle {
+      background: linear-gradient(to right top, #fff 50%, transparent 50.5%);
+      bottom: 0;
+      height: 150px;
+      left: -3%;
+      position: absolute;
+      width: 103%;
+    }
+  }
+}
