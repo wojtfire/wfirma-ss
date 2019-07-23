@@ -3,15 +3,16 @@
 nav {
   display: flex;
   justify-content: center;
-  background: transparent;
+  background-color: transparent;
   position: fixed;
   z-index: 999;
   top: 0;
   left: 0;
   width: 100%;
   color: white;
-  transition: all 0.4s ease-in-out;
+  padding: 5px 0;
   height: 86px;
+  transition: all 0.4s ease-in-out;
 
   a {
     cursor: pointer;
@@ -20,10 +21,7 @@ nav {
   &.is-hover {
     background: $nav-hover;
     color: $link-hover;
-
-    .container > .nav-header {
-      background-image: url('/assets/logos/header-logo-dark.svg');
-    }
+    transition: all 0.4s ease-in-out;
 
     .container > .nav-options > .nav-login > .padlock-icon {
       background-position: -43px -10px;
@@ -31,7 +29,10 @@ nav {
   }
 
   &.is-fixed {
-    top: -5px;
+    box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.1);
+    height: 76px;
+    padding: 0;
+    transition: 0.4s ease-in-out;
   }
 
   .container {
@@ -39,10 +40,8 @@ nav {
     flex-direction: row;
     justify-content: space-between;
     width: 100%;
-
     background: transparent;
     margin: 0 88px;
-    padding: 15px;
 
     @media (min-width: 1200px) {
       width: 1170px;
@@ -50,10 +49,16 @@ nav {
 
     .nav-header {
       display: flex;
+      align-self: center;
       width: 210px;
       height: 54px;
-      background-image: url('/assets/logos/header-logo.svg');
       cursor: pointer;
+
+      &-link {
+        svg {
+          color: white;
+        }
+      }
     }
 
     .nav-menu {
@@ -89,7 +94,7 @@ nav {
 
             &:hover::after {
               visibility: visible;
-              transition: 0.3s;
+              transition: 0.4s;
             }
           }
         }
@@ -98,10 +103,10 @@ nav {
 
     .nav-options {
       display: flex;
+      align-self: center;
 
       .nav-login {
         padding: 15px;
-        transition: 0s;
 
         .padlock-icon {
           background: url(/assets/padlock-sprite-icon.png) -10px -10px no-repeat;
