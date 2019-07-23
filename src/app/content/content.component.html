@@ -83,6 +83,7 @@
           <div class="dotted-line">
             <svg>
               <polyline
+                #polylineXS
                 class="visible-xs-block"
                 points="0,2 300,2, 380,160 460,2 767,2"
                 fill="none"
@@ -92,6 +93,7 @@
                 stroke-dasharray="1, 10"
               ></polyline>
               <polyline
+                #polylineSM
                 class="visible-sm-block"
                 points="0,2 350,2, 490,80 645,2 991,150"
                 fill="none"
@@ -101,6 +103,7 @@
                 stroke-dasharray="1, 10"
               ></polyline>
               <polyline
+                #polylineMD
                 class="visible-md-block"
                 points="0,2 160,2 280,70 400,2 600,150"
                 fill="none"
@@ -110,6 +113,8 @@
                 stroke-dasharray="1, 10"
               ></polyline>
               <polyline
+                #polylineLG
+                [attr.transform]="translate"
                 class="visible-lg-block"
                 points="0,2 2075,2 2230,80 2385,2 2600,170"
                 fill="none"
@@ -117,7 +122,6 @@
                 stroke-linecap="round"
                 stroke="#fff"
                 stroke-dasharray="1, 10"
-                transform="translate(-1907.5)"
               ></polyline>
             </svg>
           </div>

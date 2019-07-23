@@ -19,7 +19,7 @@ nav {
 
   &.is-hover {
     background: $nav-hover;
-    color: $nav-content-hover;
+    color: $link-hover;
 
     .container > .nav-header {
       background-image: url('/assets/logos/header-logo-dark.svg');
