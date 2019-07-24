@@ -1,71 +1,75 @@
 <div class="container">
   <!-- HERO SECTION -->
-  <div class="hero">
-    <div class="hero-header">
-      <h1>Wygodne narzędzia do księgowości <br />i fakturowania online</h1>
-      <div class="small">
-        Zarządzaj swoim biznesem z każdego miejsca o dowolnej porze
+  <div class="hero-wrapper">
+    <div class="hero">
+      <div class="hero-header">
+        <h1>Wygodne narzędzia do księgowości <br />i fakturowania online</h1>
+        <div class="small">
+          Zarządzaj swoim biznesem z każdego miejsca o dowolnej porze
+        </div>
+        <a class="hero-btn">Wypróbuj za darmo</a>
       </div>
-      <a class="hero-btn">Wypróbuj za darmo</a>
+      <a class="mouse-scroll-btn">Dowiedz się więcej!</a>
+      <div class="triangle"></div>
     </div>
-    <a class="mouse-scroll-btn">Dowiedz się więcej!</a>
-    <div class="triangle"></div>
   </div>
   <!-- TILES SECTION -->
   <div class="tiles">
-    <div class="tiles-header">
-      <p class="tiles-header-p">Jeden system, wiele możliwości</p>
-      <small class="tiles-header-small"
-        >Prowadź księgowość online i zyskaj niezależność w zarządzaniu
-        firmą!</small
-      >
-    </div>
-    <div class="tiles-wrapper">
-      <div class="tiles-tile">
-        <div class="tiles-tile-content">
-          <div class="tiles-tile-content-body">
-            <h2>Zarządzanie sprzedażą</h2>
-            <ul>
-              <li>Fakturowanie</li>
-              <li>Magazyn</li>
-              <li>CRM</li>
-              <li>e-Commerce</li>
-            </ul>
-          </div>
-          <div class="tiles-tile-content-footer">
-            <a class="tile-btn">Zobacz więcej</a>
+    <div class="container">
+      <div class="tiles-header">
+        <p class="tiles-header-p">Jeden system, wiele możliwości</p>
+        <small class="tiles-header-small"
+          >Prowadź księgowość online i zyskaj niezależność w zarządzaniu
+          firmą!</small
+        >
+      </div>
+      <div class="tiles-wrapper">
+        <div class="tiles-tile">
+          <div class="tiles-tile-content">
+            <div class="tiles-tile-content-body">
+              <h2>Zarządzanie sprzedażą</h2>
+              <ul>
+                <li>Fakturowanie</li>
+                <li>Magazyn</li>
+                <li>CRM</li>
+                <li>e-Commerce</li>
+              </ul>
+            </div>
+            <div class="tiles-tile-content-footer">
+              <a class="tile-btn">Zobacz więcej</a>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="tiles-tile">
-        <div class="tiles-tile-content">
-          <div class="tiles-tile-content-body">
-            <h2>Zarządzanie sprzedażą</h2>
-            <ul>
-              <li>Generator dokumentów</li>
-              <li>Integracje z e-ZUS i MF</li>
-              <li>Ewidencja czasu pracy</li>
-              <li>Elektroniczne akta osobowe</li>
-            </ul>
-          </div>
-          <div class="tiles-tile-content-footer">
-            <a class="tile-btn">Zobacz więcej</a>
+        <div class="tiles-tile">
+          <div class="tiles-tile-content">
+            <div class="tiles-tile-content-body">
+              <h2>Zarządzanie sprzedażą</h2>
+              <ul>
+                <li>Generator dokumentów</li>
+                <li>Integracje z e-ZUS i MF</li>
+                <li>Ewidencja czasu pracy</li>
+                <li>Elektroniczne akta osobowe</li>
+              </ul>
+            </div>
+            <div class="tiles-tile-content-footer">
+              <a class="tile-btn">Zobacz więcej</a>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="tiles-tile">
-        <div class="tiles-tile-content">
-          <div class="tiles-tile-content-body">
-            <h2>Kadry i płace</h2>
-            <ul>
-              <li>KPiR, Ryczałt, VAT</li>
-              <li>JPK, e-Deklaracje</li>
-              <li>Kasa / Bank</li>
-              <li>Środki trwałe</li>
-            </ul>
-          </div>
-          <div class="tiles-tile-content-footer">
-            <a class="tile-btn">Zobacz więcej</a>
+        <div class="tiles-tile">
+          <div class="tiles-tile-content">
+            <div class="tiles-tile-content-body">
+              <h2>Kadry i płace</h2>
+              <ul>
+                <li>KPiR, Ryczałt, VAT</li>
+                <li>JPK, e-Deklaracje</li>
+                <li>Kasa / Bank</li>
+                <li>Środki trwałe</li>
+              </ul>
+            </div>
+            <div class="tiles-tile-content-footer">
+              <a class="tile-btn">Zobacz więcej</a>
+            </div>
           </div>
         </div>
       </div>
@@ -75,7 +79,7 @@
   <div class="profit">
     <div class="wrapper-half">
       <div class="panel-primary">
-        <div class="panel-body">
+        <div class="panel-body" #panelBody>
           <div class="panel-body-header">
             <h3>Z nami zyskujesz więcej</h3>
             <small>Zapewniamy Ci</small>
@@ -104,6 +108,7 @@
               ></polyline>
               <polyline
                 #polylineMD
+                [attr.transform]="translate"
                 class="visible-md-block"
                 points="0,2 160,2 280,70 400,2 600,150"
                 fill="none"
@@ -114,7 +119,9 @@
               ></polyline>
               <polyline
                 #polylineLG
-                [attr.transform]="translate"
+                [attr.transform]="
+                  polylineLGvisible ? translate : 'translate(0,0)'
+                "
                 class="visible-lg-block"
                 points="0,2 2075,2 2230,80 2385,2 2600,170"
                 fill="none"
@@ -199,22 +206,22 @@
       </div>
       <div class="row">
         <div class="col-sm-3 col-xs-12">
-          <div class="counter">140</div>
+          <div class="counter">{{ registeredStart }}</div>
           <small>tys.</small>
           <p>zarejestrowanych użytkowników</p>
         </div>
         <div class="col-sm-3 col-xs-12">
-          <div class="counter">13</div>
+          <div class="counter">{{ accountingStart }}</div>
           <small>lat</small>
           <p>na rynku księgowości</p>
         </div>
         <div class="col-sm-3 col-xs-12">
-          <div class="counter">197</div>
+          <div class="counter">{{ declarationStart }}</div>
           <small>tys.</small>
           <p>wysłanych e-deklaracji</p>
         </div>
         <div class="col-sm-3 col-xs-12">
-          <div class="counter">19</div>
+          <div class="counter">{{ invoiceStart }}</div>
           <small>mln</small>
           <p>wystawionych faktur</p>
         </div>
@@ -277,83 +284,29 @@
   <div class="managers">
     <div class="container">
       <div class="row">
-        <div class="manager" id="manager-1">
+        <div
+          class="manager"
+          *ngFor="let manager of managers"
+          [style.display]="manager.id === managerChosen ? 'block' : 'none'"
+        >
           <div class="left-column">
-            <img src="/assets/managers/bok.png" alt="" />
+            <img src="{{ manager.photo }}" alt="" />
           </div>
           <div class="center-column">
             <div class="content">
-              <p class="manager-name">Angelika Borowska</p>
+              <p class="manager-name">{{ manager.name }}</p>
               <p>
-                Stale wspieramy naszych klientów poprzez indywidualne podejście
-                do każdej sprawy. Do tej pory udzieliliśmy ponad 40 000 porad z
-                zakresu księgowości, podatków, kadr i prawa gospodarczego.
-                Dostarczamy niezbędną wiedzę, która bezpośrednio przekłada się
-                na efektywne zarządzanie firmą.
+                {{ manager.text }}
               </p>
-              <img src="/assets/managers/bok-sign.png" alt="" />
-              <div>Kierownik Biura Obsługi Klienta</div>
-            </div>
-          </div>
-        </div>
-        <div class="manager" id="manager-2" style="display: none">
-          <div class="left-column">
-            <img src="/assets/managers/quality.png" alt="" />
-          </div>
-          <div class="center-column">
-            <div class="content">
-              <p class="manager-name">Bartłomiej Lazarowicz</p>
-              <p>
-                Dbamy o dostarczanie najwyższej jakości kompleksowego narzędzia
-                do prowadzenia księgowości firmy. Przestrzegamy, aby wszystkie
-                procesy, odbywające się w ramach modyfikacji systemu,
-                przeprowadzane były zgodnie z polityką jakości ISO 9001.
-              </p>
-              <img src="/assets/managers/quality-sign.svg" alt="" />
-              <div>Kierownik Działu Jakości</div>
-            </div>
-          </div>
-        </div>
-        <div class="manager" id="manager-3" style="display: none">
-          <div class="left-column">
-            <img src="/assets/managers/development.png" alt="" />
-          </div>
-          <div class="center-column">
-            <div class="content">
-              <p class="manager-name">Beata Kostrzycka</p>
-              <p>
-                Zapewniamy innowacyjność serwisu popartą wieloletnim
-                doświadczeniem w branży księgowości i zarządzania biznesem. Cały
-                czas monitorujemy zmiany oraz trendy zachodzące w sposobie
-                prowadzenia i rozwijania firmy.
-              </p>
-              <img src="/assets/managers/development-sign.svg" alt="" />
-              <div>Kierownik Działu Rozwoju</div>
-            </div>
-          </div>
-        </div>
-        <div class="manager" id="manager-4" style="display: none">
-          <div class="left-column">
-            <img src="/assets/managers/legal.png" alt="" />
-          </div>
-          <div class="center-column">
-            <div class="content">
-              <p class="manager-name">Ewa Szpytko-Waszczyszyn</p>
-              <p>
-                Zapewniamy regularne aktualizacje systemu, które odpowiadają na
-                potrzeby naszych klientów i są zgodne z obowiązującym stanem
-                prawnym. Gwarantujemy bezpieczeństwo korzystania z serwisu, nad
-                którym nieustannie czuwają eksperci z zakresu prawa.
-              </p>
-              <img src="/assets/managers/legal-sign.svg" alt="" />
-              <div>Kierownik Działu Prawnego</div>
+              <img src="{{ manager.sign }}" alt="" />
+              <div>{{ manager.position }}</div>
             </div>
           </div>
         </div>
         <div class="right-column">
           <div class="btn-group">
-            <button class="btn-slider"><</button>
-            <button class="btn-slider">></button>
+            <button class="btn-slider" (click)="nextManager()"><</button>
+            <button class="btn-slider" (click)="previousManager()">></button>
           </div>
         </div>
       </div>
@@ -376,18 +329,23 @@
       <div class="opinions-wrapper">
         <div class="row">
           <div class="col-sm-12">
-            <div class="opinion">
-              Główną zaletą systemu jest łatwy i przejrzysty panel klienta.
-              Posługiwanie się nim nie sprawi zatem absolutnie żadnych problemów
-              nawet największemu laikowi komputerowemu. Intuicyjne przejścia i
-              estetyczny wygląd tylko ułatwiają użytkowanie.
-              <br /><br />Justyna
+            <div
+              class="opinion"
+              *ngFor="let opinion of opinions"
+              [class.hidden]="opinion.id != opinionIdPressed"
+            >
+              {{ opinion.text }}
+              <br /><br />{{ opinion.author }}
             </div>
           </div>
           <div class="switch-icons">
-            <span class="switch-icon active"></span>
-            <span class="switch-icon"></span>
-            <span class="switch-icon"></span>
+            <span
+              *ngFor="let opinion of opinions"
+              class="switch-icon"
+              [class.active]="opinionIdPressed == opinion.id"
+              [attr.opinion.id]="opinion.id"
+              (click)="changeOpinion(opinion.id)"
+            ></span>
           </div>
         </div>
       </div>

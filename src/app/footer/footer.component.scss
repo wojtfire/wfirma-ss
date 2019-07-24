@@ -1,0 +1,43 @@
+@import '../../variables.scss';
+
+.footer {
+  margin-top: 20px;
+  background-color: white;
+  box-shadow: 0 -4px 15px 0 rgba(0, 0, 0, 0.1);
+  color: $link-hover;
+
+  .top-footer {
+    .container {
+      width: 1170px;
+      margin: 0 auto;
+      justify-content: center;
+      flex-direction: column;
+      border-bottom: 1px solid #dddddd;
+
+      @include breakpoint-down(xl) {
+        width: 970px;
+      }
+
+      ul {
+        display: flex;
+        flex-direction: row;
+        align-self: center;
+
+        li {
+          padding: 20px;
+          margin: 0 50px;
+
+          a {
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+
+  .bottom-footer {
+    display: block;
+    height: 50px;
+    width: 100%;
+  }
+}

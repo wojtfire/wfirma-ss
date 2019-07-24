@@ -1,10 +1,15 @@
 $nav-hover: #fff;
-$main-theme: #375ebc;
+$main-theme: #593196;
 $main-theme-dark: #29468a;
 $link-hover: #374252;
 $tile-color-left: #f75f30;
 $tile-color-middle: #00b75f;
-$tile-color-right: #375ebc;
+$tile-color-right: $main-theme;
+
+$sm: 576px;
+$md: 768px;
+$lg: 992px;
+$xl: 1200px;
 
 /* poppins-regular - latin-ext_latin */
 @font-face {
@@ -83,6 +88,106 @@ $tile-color-right: #375ebc;
     /* Safari, Android, iOS */
       url('/assets/fonts/poppins-v6-latin-ext_latin-700.svg#Poppins')
       format('svg'); /* Legacy iOS */
+}
+
+@mixin breakpoint-down($size) {
+  @if $size== 'sm' {
+    @media screen and (max-width: $sm) {
+      @content;
+    }
+  } @else if $size== 'md' {
+    @media screen and (max-width: $md) {
+      @content;
+    }
+  } @else if $size== 'lg' {
+    @media screen and (max-width: $lg) {
+      @content;
+    }
+  } @else if $size== 'xl' {
+    @media screen and (max-width: $xl) {
+      @content;
+    }
+  }
+}
+
+@mixin breakpoint-up($size) {
+  @if $size== 'sm' {
+    @media screen and (min-width: $sm) {
+      @content;
+    }
+  } @else if $size== 'md' {
+    @media screen and (min-width: $md) {
+      @content;
+    }
+  } @else if $size== 'lg' {
+    @media screen and (min-width: $lg) {
+      @content;
+    }
+  } @else if $size== 'xl' {
+    @media screen and (min-width: $xl) {
+      @content;
+    }
+  }
+}
+
+@mixin breakpoint-between($sizeSmall, $sizeBig) {
+  @if $sizeSmall== 'sm' {
+    @if $sizeBig== 'md' {
+      @media (max-width: $md) and (min-width: $sm) {
+        @content;
+      }
+    } @else if $sizeBig == 'lg' {
+      @media (max-width: $lg) and (min-width: $sm) {
+        @content;
+      }
+    } @else if $sizeBig == 'xl' {
+      @media (max-width: $xl) and (min-width: $sm) {
+        @content;
+      }
+    }
+  } @else if $sizeSmall== 'md' {
+    @if $sizeBig== 'sm' {
+      @media (max-width: $md) and (min-width: $sm) {
+        @content;
+      }
+    } @else if $sizeBig == 'lg' {
+      @media (max-width: $lg) and (min-width: $md) {
+        @content;
+      }
+    } @else if $sizeBig == 'xl' {
+      @media (max-width: $xl) and (min-width: $md) {
+        @content;
+      }
+    }
+  } @else if $sizeSmall== 'lg' {
+    @if $sizeBig== 'sm' {
+      @media (max-width: $lg) and (min-width: $sm) {
+        @content;
+      }
+    } @else if $sizeBig == 'md' {
+      @media (max-width: $lg) and (min-width: $md) {
+        @content;
+      }
+    } @else if $sizeBig == 'xl' {
+      @media (max-width: $xl) and (min-width: $lg) {
+        @content;
+      }
+    }
+  } @else if $sizeSmall== 'xl' {
+    @if $sizeBig== 'sm' {
+      @media (max-width: $xl) and (min-width: $sm) {
+        @content;
+      }
+    } @else if $sizeBig == 'md' {
+      @media (max-width: $xl) and (min-width: $md) {
+        @content;
+      }
+    } @else if $sizeBig == 'lg' {
+      @media (max-width: $xl) and (min-width: $lg) {
+        @content;
+      }
+    }
+  }
 }
 
 .container {

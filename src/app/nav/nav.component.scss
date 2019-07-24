@@ -12,19 +12,24 @@ nav {
   color: white;
   padding: 5px 0;
   height: 86px;
-  transition: all 0.4s ease-in-out;
+  transition: background-color 0.4s ease-in-out;
+  font-size: 14px;
 
   a {
     cursor: pointer;
   }
 
   &.is-hover {
-    background: $nav-hover;
+    background-color: $nav-hover;
     color: $link-hover;
-    transition: all 0.4s ease-in-out;
+    transition: background-color 0.4s ease-in-out;
 
     .container > .nav-options > .nav-login > .padlock-icon {
       background-position: -43px -10px;
+    }
+
+    .container > .nav-header > .nav-header-link > .st-1 {
+      fill: black;
     }
   }
 
@@ -55,8 +60,8 @@ nav {
       cursor: pointer;
 
       &-link {
-        svg {
-          color: white;
+        .st1 {
+          fill: white;
         }
       }
     }
@@ -71,14 +76,22 @@ nav {
         list-style-type: none;
 
         li {
-          margin-right: 80px;
+          margin: 0 15px 0 45px;
           text-align: center;
           display: flex;
           justify-content: center;
 
+          &:first-of-type {
+            margin: 0 15px 0 0;
+          }
+
+          @include breakpoint-down(lg) {
+            margin-right: 40px;
+          }
+
           a {
             align-self: center;
-            padding: 15px 0;
+            padding: 18px 0 15px;
             position: relative;
 
             &::after {
@@ -90,11 +103,12 @@ nav {
               height: 3px;
               left: 0;
               bottom: 0;
+              transition: 0.1s;
             }
 
             &:hover::after {
               visibility: visible;
-              transition: 0.4s;
+              transition: 0.1s;
             }
           }
         }
@@ -107,6 +121,7 @@ nav {
 
       .nav-login {
         padding: 15px;
+        width: 131px;
 
         .padlock-icon {
           background: url(/assets/padlock-sprite-icon.png) -10px -10px no-repeat;
@@ -120,12 +135,13 @@ nav {
       }
 
       .nav-register {
-        width: 150px;
+        width: 157px;
         height: 53px;
         background-color: $main-theme;
         padding: 15px;
         text-align: center;
         color: white;
+        transition: 0.3s;
 
         &:hover {
           background-color: $main-theme-dark;
