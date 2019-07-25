@@ -287,8 +287,12 @@
         <div
           class="manager"
           *ngFor="let manager of managers"
-          [style.display]="manager.id === managerChosen ? 'block' : 'none'"
+          [style.z-index]="managerChosen === manager.id ? 2 : 1"
+          [class.visible]="managerChosen === manager.id"
         >
+          <!-- [style.opacity]="managerChosen === manager.id ? 1 : 0"
+            [@managerOpacity]="managerChosen === manager.id"
+         -->
           <div class="left-column">
             <img src="{{ manager.photo }}" alt="" />
           </div>

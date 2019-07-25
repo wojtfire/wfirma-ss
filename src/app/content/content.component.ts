@@ -24,18 +24,14 @@ import {
   styleUrls: ['./content.component.scss']
 })
 export class ContentComponent implements OnInit {
-  @ViewChild('polylineXS') polylineXS: ElementRef;
-  @ViewChild('polylineSM') polylineSM: ElementRef;
   @ViewChild('polylineMD') polylineMD: ElementRef;
   @ViewChild('polylineLG') polylineLG: ElementRef;
   @ViewChild('panelBody') panelBody: ElementRef;
-  polylineXSvisible = false;
-  polylineSMvisible = false;
   polylineMDvisible = false;
   polylineLGvisible = false;
 
-  maxTime = 4;
-  time = 0;
+  timerTime = 4;
+  actualTime = 0;
   timerStarted = false;
   timerDone = false;
   intervalTimer: any;
@@ -44,19 +40,19 @@ export class ContentComponent implements OnInit {
   translate = '';
   registeredMax = 140;
   registeredStart = 0;
-  registerIntervalTime = (this.maxTime * 1000) / this.registeredMax;
+  registerIntervalTime = (this.timerTime * 1000) / this.registeredMax;
   registerInterval: any;
   accountingMax = 13;
   accountingStart = 0;
-  accountingIntervalTime = (this.maxTime * 1000) / this.accountingMax;
+  accountingIntervalTime = (this.timerTime * 1000) / this.accountingMax;
   accountingInterval: any;
   declarationMax = 197;
   declarationStart = 0;
-  declarationIntervalTime = (this.maxTime * 1000) / this.declarationMax;
+  declarationIntervalTime = (this.timerTime * 1000) / this.declarationMax;
   declarationInterval: any;
   invoiceMax = 19;
   invoiceStart = 0;
-  invoiceIntervalTime = (this.maxTime * 1000) / this.invoiceMax;
+  invoiceIntervalTime = (this.timerTime * 1000) / this.invoiceMax;
   invoiceInterval: any;
 
   opinionIdPressed = 1;
@@ -180,9 +176,8 @@ export class ContentComponent implements OnInit {
       if (!this.timerStarted && !this.timerDone) {
         this.timerStarted = true;
         this.intervalTimer = setInterval(() => {
-          console.log(this.time);
-          if (this.time < this.maxTime) {
-            this.time += 1;
+          if (this.actualTime < this.timerTime) {
+            this.actualTime += 1;
           } else {
             clearInterval(this.intervalTimer);
             this.timerStarted = false;

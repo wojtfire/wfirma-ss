@@ -12,7 +12,8 @@ nav {
   color: white;
   padding: 5px 0;
   height: 86px;
-  transition: background-color 0.4s ease-in-out;
+  transition: background-color 0.4s ease-in, display 0.4s ease-in,
+    height 0.3s ease-in;
   font-size: 14px;
 
   a {
@@ -29,7 +30,7 @@ nav {
     }
 
     .container > .nav-header > .nav-header-link > .st-1 {
-      fill: black;
+      fill: white !important;
     }
   }
 
@@ -37,7 +38,7 @@ nav {
     box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.1);
     height: 76px;
     padding: 0;
-    transition: 0.4s ease-in-out;
+    transition: 0.3s ease-in-out;
   }
 
   .container {
@@ -60,8 +61,20 @@ nav {
       cursor: pointer;
 
       &-link {
+        .st0 {
+          fill: #593196;
+        }
+
         .st1 {
-          fill: white;
+          fill: #333132;
+        }
+
+        .st2 {
+          fill: #ffffff;
+        }
+
+        .st3 {
+          fill: #a7a8ab;
         }
       }
     }
